@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Styling for the entire application container */
+  .container {
+    padding: 10px;
+    width: 100%;
+    min-height: 100vh; /* Fills the viewport height */
+    background-color: #202124;
+  }
+  
+  /* Styling for the main "To-Do" app section */
+  .todo-app {
+    width: 100%; /* Adjust width as desired */
+    max-width: 540px;
+    background-color: #303134; /* Slightly lighter background for app section */
+    border-radius: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    
+  }
+  
+  /* Styling for the heading and icon */
+  .first {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    position: fixed; /* Fixed position for the header */
+    top: 0; /* Stick it to the top */
+    left: 0; /* Stick it to the left */
+    width: 100%; /* Full width */
+    height: 3rem;
+    background-color: #3031346f;
+    padding: 20px;
+    z-index: 100; /* Ensure it's above other content */
+    color: white;
+  }
+
+  
+  .first h1 {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  .first img {
+    width:30px;
+    height: 25px;
+  }
+
+  #digitalClock{
+    color: white;
+    font-size: 16px;
+  }
+  
+  /* Styling for the input bar and "Add" button */
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    border-radius: 30px;
+    padding-left: 10px;
+  }
+  
+  #inputbar {
+    flex: 1;
+    outline: none;
+    border: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    font-size: 16px;
+    background-color: #191a1b; 
+    color: #fff; 
+  }
+  
+  #add {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    background-color: #28a745; 
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out; 
+  }
+  
+  #add:hover {
+    background-color: #1e7c3c; /* Darker green on hover */
+  }
+  
+  /* Styling for the "To-Do" and "Completed Tasks" list */
+  #taskList,
+  #completedList {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    color: #eee; /* Light text color for list items */
+  }
+  
+  #taskList li{
+    padding: 10px 20px;
+    border-bottom: 1px solid #444; /* Darker border for list items */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #completedList li {
+    padding: 10px 20px;
+    border-bottom: 1px solid #444; /* Darker border for list items */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: line-through;
+  }
+  
+  /* Styling for "Completed Tasks" section */
+  #completedSection {
+    display: none; /* Initially hide the section */
+  }
+  
+  #completedBtn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444; /* Medium gray color for "Completed Tasks" button */
+    color: #eee; /* Light text color */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  #completedBtn:hover {
+    background-color: #333; /* Darker gray on hover */
+  }
+  
+  /* Responsiveness for smaller screens */
+  @media (max-width: 768px) {
+    .todo-app {
+      width: 100%; /* Full width on smaller screens */
+    }
+  }
+  
+  
